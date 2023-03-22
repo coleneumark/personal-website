@@ -1,0 +1,740 @@
+/*General page styling & sizing*/
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: "Cambria", "Cochin", Georgia, Times, 'Times New Roman', serif;
+    cursor: default;
+}   
+p {
+    font-family: "Cambria";
+    line-height: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+h1 {
+    font-family: "Spectral", "Georgia";
+    text-decoration: overline;
+    font-style: italic;
+    font-weight: normal;
+}
+.line-1{ 
+    position: relative;
+    top: 50%;  
+    width: 25px;
+    border-right: 4px solid black;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-5%);    
+}
+h2 {
+    font-family: "Georgia";
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+h3 {
+    font-family: "Garamond";
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+h4 {
+    font-family: "Cambria";
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+h5 {
+    font-family: "Georgia";
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+h6 {
+    font-family: "Georgia";
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+a {
+    color: #444;
+    text-decoration: underline;
+}
+a:hover {
+    color: mediumvioletred;
+    
+}
+.clear {
+    clear: both;
+}
+.wrap {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 900px;
+}
+#header-wrap {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 900px;
+}
+ul {
+    list-style-type: none;
+}
+
+
+/*Header*/
+header {
+    height: 150px;
+}
+header h1 {
+    margin-top: 32px;
+}
+
+/* Typewriter Animation */          /*Typewriter animation learned from*/
+.anim-typewriter{                   /*https://css-tricks.com/snippets/css/typewriter-effect/*/
+    overflow: hidden;
+    margin: 0 auto;
+  animation: typewriter 4s steps(30, end) 1s 1 normal both,
+             blinkTextCursor 500ms steps(20) infinite;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 37%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0,0,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*Social media icons*/
+header .socials{
+    margin-left: 230px;
+}
+header .socials li img {
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    padding: 0 20px 20px 20px;
+}
+header .socials li img:hover {
+    opacity: 70%;
+}
+
+
+/*Navigation Bar*/
+nav { 
+    list-style-type: none;
+    padding: 0;
+}
+nav ul {
+    margin: auto;
+}
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+nav ul li a {
+    color: black;
+    font-family: "Merriweather", "Georgia", serif;
+    font-weight: bold;
+    display: block;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: mediumvioletred;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/*Home: Hero image and clickable button*/
+#hero-image {
+    height: 550px;
+    margin: auto;
+    padding-top: 1px;
+    background: #e8eced url("images/hero-image-alt.jpg") no-repeat center;
+}
+#hero-image a:hover {
+    background-color: lightgray;
+    color: black;
+    opacity: 60%;
+    transition: 0.2s;
+}
+.button-1 {
+    display: block;
+    text-align: center;
+    background: mediumvioletred;
+    border-radius: 3px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 40px;
+    margin: 0 auto;
+    opacity: 80%;
+    text-decoration: none;
+}
+.feature-font {
+    margin: 420px 0 0 0;
+    font-family: "Georgia";
+    background: linear-gradient(to right, hsl(256, 100%, 50%), hsl(329, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    -webkit-text-stroke: .5px black;
+    font-size: 55px;
+    padding-bottom: 5px;
+}
+
+/*Home: Introduction paragraph*/
+div#introduction {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#introduction h3 {
+    font-size: 40px;  
+}
+#extra-1 {
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+#extra-2 {
+    font-size: 30px;
+}
+#extra-3 {
+    text-indent: 50px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/*CV: Profile and Image*/
+div#profile {
+    padding-top: 100px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+#profile-text {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 0;
+}
+#profile-text h3 {
+    font-size: 55px;
+    text-decoration: overline;
+    padding: 0;
+    margin: 0;
+    color: mediumvioletred;
+}
+#profile-text p{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 50px;
+    text-justify: inter-word;
+    padding: 15px;
+}
+#profile-image {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 450px;
+    background: #e8eced url("images/profile-image.jpg") no-repeat center;
+}
+
+
+/*PORTFOLIO: Video*/
+div.video-intro {
+    padding-top: 100px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 550px;
+}
+.video-intro video {
+    filter: grayscale(1);
+}
+
+
+/*PORTFOLIO: Software Skills*/
+div#software-skills {
+    padding-top: 100px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 350px;
+}
+#software-text {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 450px;
+}
+#software-text #extra-1 {
+    font-size: 30px;
+    text-decoration: overline;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    color: mediumvioletred;
+}
+#software-text li{
+    font-size: 17px;
+    list-style-type: square;
+    line-height: 1.5;
+    padding-bottom: 2px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 15px;
+}
+#software-text .lang {
+    font-weight: bold;
+}
+#software-image {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 0;
+    background: #e8eced url("images/tech-skills.jpg") no-repeat center;
+}
+
+/*WRITING: Abstract and Collage Image*/
+div#abstract {
+    padding-top: 100px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+}
+#abstract-text {
+    position: absolute;
+    width: 450px;
+    height: 300px;
+    left: 450px;
+}
+#abstract-text #extra-1 {
+    font-size: 55px;
+    text-decoration: overline;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+    color: gold;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+}
+#abstract-text p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom: 2px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 15px;
+    padding-left: 25px;
+}
+#abstract-text .emp {
+    font-weight: bold;
+}
+#abstract-text #golden {
+    font-weight: bold;
+    color: goldenrod;
+    font-style: italic;
+    font-size: 19px;
+}
+#collage-image {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    left: 0;
+    background: #e8eced url("images/collage.jpg") no-repeat center;
+    filter: grayscale(1);
+}
+#collage-image:hover {              /*Black/White to Color Image on Hover learned from*/
+    filter: none;                   /*https://thebrandsmen.com/css-image-hover-effects/*/
+    transition: 0.2s;
+}
+
+/*TRAVEL: Achievements and Image Gallery*/
+div#achieve {
+    padding-top: 70px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 350px;
+} 
+#achieve li {
+    font-size: 22px;
+    list-style-type: square;
+    float: left;
+    text-align: justify;
+    line-height: 1.8;
+    text-justify: inter-word;
+    list-style-type: none;
+}
+#achieve li .bold {
+    font-style: italic;
+    font-weight: bold;
+    color: mediumvioletred;
+}
+#achieve li#special {
+    font-size: 20px;
+    font-family: "Georgia";
+    font-weight: bold;
+    color: mediumvioletred;
+    line-height: 1;
+    padding-top: 30px;
+}
+div#gallery {
+    padding-top: 70px;
+    position: relative;
+    margin: auto;
+    width: 75%;
+}
+div#gallery-images {
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#achieve h3, #gallery h3 {
+    font-size: 45px;
+    text-decoration: overline;
+    padding-top: 20px;
+    margin: 0; 
+    color: mediumvioletred;   
+}
+#gallery figure {
+    padding: 50px;
+    margin: auto;
+    filter: grayscale(1);
+    width: 300px;
+}
+#gallery figure:hover {
+    filter: none;
+    transition: 0.4s;
+    transform: scale(1.5);
+}
+#gallery figcaption {
+    color: black;
+    font-style: italic;
+    text-align: center;
+    align-self: flex-start;
+    width: 300px;
+}
+
+
+/*WRITING: Scroll Box*/             /*Scroll Box learned from*/
+#scroll-box p {                     /*https://www.quackit.com/html/codes/html_scroll_box.cfm*/
+    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#scroll-box h2{
+    font-size: 50px;
+    text-decoration: overline;
+    color: gold;
+    text-shadow: 2px 1px black;
+    font-weight: bold;
+}
+#scroll-box h4 {
+    text-decoration: overline;
+    color: gold;
+    text-shadow: 2px 1px black;
+    font-size: 30px;
+    font-weight: bold;
+}
+#scroll-box #special-char::first-letter {
+    font-size: 39px;
+    font-family: "Baskerville";
+    color: gold;
+    text-shadow: 2px 1px black;
+    padding-right: 3px;
+}
+
+/*PORTFOLIO: Features*/
+div.features-portfolio {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+}
+.button-2 {
+    display: block;
+    text-align: center;
+    background: mediumvioletred;
+    border-radius: 3px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 40px;
+    opacity: 80%;
+    margin: auto;
+    text-decoration: none;
+}
+.button-2:hover {
+    background-color: lightgray;
+    color: black;
+    opacity: 60%;
+    transition: 0.2s;
+}
+
+
+/*CV: Hover Table for Education*/
+div.education {
+    padding-top: 100px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 400px;
+}
+.education table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+.education table th {
+    font-size: 50px;
+    padding: 0;
+     font-family: "Garamond";
+    color: mediumvioletred;
+    text-decoration: overline;
+    font-weight: normal;
+}
+.education table td {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    text-align: left;
+}
+.education table tr:last-child td:first-child, tr:last-child td:last-child, tr:nth-child(7) td.result:last-child {
+    border-bottom: 1px solid whitesmoke;
+}
+table tr .location {
+    font-weight: normal;
+}
+table tr .degree {
+    font-weight: bold;
+    background-color: lightgrey;
+}
+table tr .date {
+    color: mediumvioletred;
+}
+table tr .result {
+    font-weight: normal;
+}
+table .location:hover {
+    background-color: #e868b1;
+    color: white;
+    font-style: italic;
+}
+table .degree:hover {
+    background-color: mediumvioletred;
+    font-weight: bold;
+}
+table .date:hover {
+    background-color: #e89ec8;
+    color: white;
+}
+table .result:hover {
+    background-color: #e3bfd3;
+    color: white;
+}
+
+
+ /*CV: Work Experience List*/
+div.work-exp {
+    position: relative;
+    margin: auto;
+    text-align: left;
+    width: 900px;
+    height: 700px;
+}
+.work-exp h3 {
+    font-size: 50px;
+    color: mediumvioletred;
+    text-decoration: overline;
+}
+.work-exp .heading {
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 10px
+}
+.work-exp .heading::first-letter {
+    font-size: 25px;
+    color: mediumvioletred;
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+.details li {
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.hidden {
+    display: none;
+}
+.work-exp:hover .hidden {
+    display: inline;
+    color: mediumvioletred;
+}
+
+/*Home: Features as vertical blocks*/
+div.features {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+li.feature-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-2 {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-3 {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-1 h4, li.feature-2 h4, li.feature-3 h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: mediumvioletred;
+    font-style: italic;
+}
+li.feature-1 p, li.feature-2 p, li.feature-3 p {
+    text-indent: 50px;
+}
+
+
+/*Home: Features-images */
+div.features-images {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+li#feature-1-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 300px;
+}
+li#feature-2-img {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 275px;
+    height: 300px;
+}
+li#feature-3-img {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 275px;
+    height: 300px;
+}
+div.features-images a:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+/*Footer with social media buttons and sitemap*/
+footer {
+    padding-top: 200px;
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+footer #footer-links {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 450px;
+    height: 300px;
+}
+footer #sitemap {
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 450px;
+    height: 300px;
+}
+footer #footer-info {
+    position: absolute;
+    top: 450px;
+    left: 0;
+    width: 900px;
+    height: 50px;
+}
+#footer-links img {
+    width: 30px;
+    padding: 0 20px 0 0;
+}
+#footer-links a {
+    font-size: 18px;
+    text-align: left;
+}
+#footer-links h5 {  
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 0;
+}
+#sitemap li h5 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+#sitemap li a {
+    font-size: 15px;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 20px;
+}
+#footer-info p {
+    color: mediumvioletred;
+    font-weight: bold;
+}

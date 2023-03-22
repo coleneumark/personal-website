@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HOME | COLE NEUMARK</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel = stylesheet type = "text/css" href = "website.css" >
+    
+<style>
+/*HOME: Hero image and clickable button*/
+#hero-image {
+    height: 550px;
+    margin: auto;
+    padding-top: 1px;
+    background: #e8eced url("images/hero-image-alt.jpg") no-repeat center;
+}
+#hero-image a:hover {
+    background-color: lightgray;
+    color: black;
+    opacity: 60%;
+    transition: 0.2s;
+}
+.button-1 {
+    display: block;
+    text-align: center;
+    background: mediumvioletred;
+    border-radius: 3px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 40px;
+    margin: 0 auto;
+    opacity: 80%;
+    text-decoration: none;
+}
+.feature-font {                 /*Gradient and font border learned from*/
+    margin: 420px 0 0 0;        /*https://codepen.io/argyleink/pen/OJMEpGp*/
+    font-family: "Georgia";     /*https://www.delftstack.com/howto/css/css-font-border/#:~:text=font%20in%20CSS.-,Use%20the%20%2Dwebkit%2Dtext%2Dstroke%20Property%20to%20Apply%20Borders,browsers%20like%20Safari%20and%20Chrome*/
+    background: linear-gradient(to right, hsl(256, 100%, 50%), hsl(329, 100%, 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    -webkit-text-stroke: .5px black;
+    font-size: 55px;
+    padding-bottom: 5px;
+}
+    
+/*HOME: Introduction paragraph*/
+div#introduction {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#introduction h3 {
+    font-size: 40px;  
+}
+    
+/*HOME: Features as vertical blocks*/
+div.features {                          /*All divs and div.wrap learned from*/
+    position: relative;                 /*https://medialoot.com/blog/how-to-code-a-homepage-template-with-html5-and-css3/*/
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+li.feature-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-2 {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-3 {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 275px;
+    height: 300px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+li.feature-1 h4, li.feature-2 h4, li.feature-3 h4 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: mediumvioletred;
+    font-style: italic;
+}
+li.feature-1 p, li.feature-2 p, li.feature-3 p {
+    text-indent: 50px;
+}
+
+/*HOME: Features-images */
+div.features-images {
+    position: relative;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+}
+li#feature-1-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 300px;
+}
+li#feature-2-img {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 275px;
+    height: 300px;
+}
+li#feature-3-img {
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 275px;
+    height: 300px;
+}
+div.features-images a:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+</style>
+    
+    
+</head>
+
+<body>
+<header>
+   <div id="header-wrap">
+        <h1 class="line-1 anim-typewriter">Cole Neumark</h1>
+    </div>
+    <br>
+    <div class="wrap">    
+    <div class="socials">
+            <ul>
+                    <li><a href="https://www.instagram.com/itssocole/"><img src="images/insta-sign.jpg" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/itssocole"><img src="images/twitter-sign.jpg" alt="Twitter"></a></li>
+                    <li><a href="https://uk.linkedin.com/in/cole-neumark-159642174"><img src="images/linkedin-sign.jpg" alt="LinkedIn"></a></li>
+                    <li><a href="https://www.xing.com/profile/Cole_Neumark"><img src="images/xing-logo.jpg" alt="Xing"></a></li>
+                    <li><a href="p5-travel.html"><img src="images/at-sign.jpg" alt="Travel Image Gallery"></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div> 
+    </div>
+</header>
+    
+    
+    <div class="wrap">
+        <nav>
+            <ul>
+                <li><a href="p1-home.html">HOME</a></li>
+                <li><a href="p2-cv.html">CURRICULUM VITAE</a></li>
+                <li><a href="p3-portfolio.html">PORTFOLIO</a></li>
+                <li><a href="p4-writing.html">WRITING</a></li>
+                <li><a href="p5-travel.html">TRAVEL</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+<div id="hero-image">
+    <div class="wrap">
+        <div >
+            <h2 class="feature-font"><i>Hi there!</i> My name is Cole.</h2>
+        </div>
+        <a href="p2-cv.html" class="button-1">Show me more!</a>
+    </div>
+    <div class="clear"></div>
+    <br>
+</div>
+    
+
+<div class="wrap">
+    <div id="introduction">
+        <h3>Let me introduce myself:</h3>
+        <p id="extra-1">I am currently studying at University College Dublin in the Master's Computer Science Conversion degree. Lots of change but also lots of new knowledge.</p>
+        <p id="extra-2">What are my goals you might ask?</p>
+        <p id="extra-3">I want to contribute to innovating the technology of tomorrow, especially in the arts sector. The innovative force of art is often underestimated. Art continuously innovates itself, yet many people hold onto this image of it as oil paintings on white museum walls. Lately, this preconceived notion is fading fast: Christie's auction house sold Beeple's NFT artwork for $69m, UNESCO invested significantly in digitisation of cultural heritage, and virtual exhibitions became the centre of curatorial activities, like the Tate Modern's Andy Warhol video tour. These emerging intersectional pathways of art and computer science are a vast and promising career direction.</p>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<div class="wrap">
+    <div class="features">
+        <ul>
+            <li class="feature-1">
+                <h4>Conversion Degree?</h4>
+                <p>UCD offers a skills conversion graduate programme for individuals who hold a primary degree in another discipline (e.g., Arts, Commerce, Engineering), and would like to enter an IT-related career. This programme provides a thorough foundation in modern Computer Science in a practically oriented learning environment.</p>
+                <p>Read all about the specifics of University College Dublin's <a href="https://hub.ucd.ie/usis/!W_HU_MENU.P_PUBLISH?p_tag=PROG&MAJR=T195">curriculum.</a></p></li>
+            <li class="feature-2">
+                <h4>Art History Degree?</h4>
+                <p>Yes, I have a BA (Hons) in English and History of Art from the <a href="https://www.birmingham.ac.uk/undergraduate/courses/jointhonours/english-and-history-of-art.aspx">University of Birmingham, UK.</a></p>
+                <p>UOB explores the ways in which the visual and literary arts have engaged with society over time and the ways in which they are evolving our world.</p></li>
+            <li class="feature-3">
+                <h4>Extracurricular Activities?</h4>
+                <p>I am also the Student Union Class Representative and Jr Treasurer of the <a href="https://www.ucd.ie/laugar/">Lau Gar Kickboxing Club.</a></p>
+                <p>Lau Gar Kickboxing is based on the traditional Chinese Lau Gar syllabus, with a broad range of options to partipcipate in, including kickboxing, sparring and self-defence.</p></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+    
+<br>
+<br>
+<br>
+<div class="wrap">
+    <div class="features-images">
+        <ul>
+            <li id="feature-1-img">
+                <a href="https://www.ucd.ie/"><img src="images/ucd-image-bw.jpg" alt="University of Dublin"></a></li>
+            <li id="feature-2-img">
+                <a href="https://www.birmingham.ac.uk/index.aspx"><img src="images/uob-image-bw.jpg" alt="University of Dublin"></a></li>
+            <li id="feature-3-img">
+                <a href="https://www.ucd.ie/laugar/about.html"><img src="images/laugar-bw.jpg" alt="Lau Gar Kickboxing Club"></a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<div class="wrap">
+    <footer>
+        <div id="footer-links">
+            <ul>
+                <li><h5>Contact Me</h5></li>
+                <li><a href="https://www.instagram.com/itssocole/"><img src="images/insta-sign.jpg" alt="Instagram">Instagram</a></li>
+                <li><a href="https://twitter.com/itssocole"><img src="images/twitter-sign.jpg" alt="Twitter">Twitter</a></li>
+                <li><a href="https://uk.linkedin.com/in/cole-neumark-159642174"><img src="images/linkedin-sign.jpg" alt="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://www.xing.com/profile/Cole_Neumark"><img src="images/xing-logo.jpg" alt="Xing">Xing</a></li>
+            </ul>
+        </div>
+        <div id="sitemap">
+            <ul>
+                <li><h5>Sitemap</h5></li>
+                <li><a href="p1-home.html">Home</a></li>
+                <li><a href="p2-cv.html">Curriculum Vitae</a></li>
+                <li><a href="p3-portfolio.html">Portfolio</a></li>
+                <li><a href="p4-writing.html">Writing</a></li>
+                <li><a href="p5-travel.html">Travel</a></li>
+            </ul>
+        </div>
+    <div id="footer-info">
+            <p>Copyright 2022 Cole Neumark. All rights reserved.</p>
+    </div>
+    </footer>
+</div>
+    
+</body>
+</html>
